@@ -7,8 +7,8 @@ import (
 
 //Doctor struct stores the details of each doctor
 type Doctor struct {
-	number     int `required max:"100"`
-	actorName  string
+	number     int
+	actorName  string `required max:"100"`
 	companions []string
 }
 
@@ -77,7 +77,7 @@ func usingStructs() {
 	//getting tags in print line using the reflect package
 
 	t := reflect.TypeOf(Doctor{})
-	field, _ := t.FieldByName("number")
+	field, _ := t.FieldByName("actorName")
 	fmt.Println(field.Tag)
 }
 
