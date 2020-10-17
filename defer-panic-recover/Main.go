@@ -38,7 +38,7 @@ func recovering() {
 
 	// this will panic then it will recover from the panic and log the error message to the console
 	//end is not executed as the panic point is where the current function stops execution
-	fmt.Println("end")
+	// fmt.Println("end")
 }
 
 func main() {
